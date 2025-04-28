@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Jogo da Memória Educativo</title>
+      <!-- Tailwind CDN -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+            /* Smooth scroll */
+            html {
+                  scroll-behavior: smooth;
+            }
+
+            /* Reveal animations */
+            .reveal {
+                  opacity: 0;
+                  transform: translateY(20px);
+                  transition: opacity 0.6s ease, transform 0.6s ease;
+            }
+
+            .reveal.active {
+                  opacity: 1;
+                  transform: none;
+            }
+      </style>
+</head>
+
+<body class="bg-white text-blue-900 leading-relaxed">
+
+      <!-- Hero Section -->
+      <section id="hero" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-700 to-blue-500 text-white text-center px-6 relative overflow-hidden">
+            <div class="absolute -top-20 -left-20 w-96 h-96 bg-white opacity-10 rounded-full animate-pulse"></div>
+            <div class="absolute -bottom-20 -right-20 w-72 h-72 bg-white opacity-10 rounded-full animate-pulse"></div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 reveal">Aprenda Sociologia e História Brincando!</h1>
+            <p class="text-lg md:text-2xl mb-8 max-w-2xl reveal">Desenvolva o raciocínio, fixe conteúdos importantes e torne o estudo mais divertido com o Jogo da Memória Educativo para impressão.</p>
+            <a href="#cta" class="bg-white text-blue-700 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-transform transform hover:scale-105 reveal">🔵 Baixar Agora</a>
+            <img src="placeholder-hero.jpg" alt="Jogo da Memória Educativo" class="mt-12 w-3/4 md:w-1/2 rounded-xl shadow-2xl border-4 border-white reveal" />
+      </section>
+
+      <!-- Benefits Section (Plain) -->
+      <section id="benefits" class="py-20 px-4 bg-blue-50">
+            <h2 class="text-3xl font-semibold text-center mb-12 reveal">Por que usar o Jogo da Memória Educativo?</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div class="bg-white rounded-2xl p-6 shadow-lg reveal hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">🧩 Aprendizado Ativo</h3>
+                        <p>Fixação natural dos conceitos de Sociologia e História.</p>
+                  </div>
+                  <div class="bg-white rounded-2xl p-6 shadow-lg reveal hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">🕑 Estudo Divertido</h3>
+                        <p>Jogadas curtas e dinâmicas para revisar sem cansar.</p>
+                  </div>
+                  <div class="bg-white rounded-2xl p-6 shadow-lg reveal hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">🖨️ Fácil de Usar</h3>
+                        <p>Material pronto para impressão, apenas recorte e jogue!</p>
+                  </div>
+                  <div class="bg-white rounded-2xl p-6 shadow-lg reveal hover:shadow-xl transition-shadow">
+                        <h3 class="text-xl font-bold mb-2 text-blue-700">🧠 Desenvolvimento Cognitivo</h3>
+                        <p>Trabalha memória, atenção e pensamento crítico.</p>
+                  </div>
+            </div>
+      </section>
+
+      <!-- How It Works Section (Gradient) -->
+      <section id="how-it-works" class="py-20 px-4 bg-gradient-to-br from-blue-700 to-blue-500 text-white">
+            <h2 class="text-3xl font-semibold text-center mb-12 reveal">Como Funciona?</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                  <div class="flex items-center reveal">
+                        <span class="text-3xl mr-4">1️⃣</span>
+                        <p>Faça o download do arquivo PDF.</p>
+                  </div>
+                  <div class="flex items-center reveal">
+                        <span class="text-3xl mr-4">2️⃣</span>
+                        <p>Imprima as cartelas (coloridas ou preto e branco).</p>
+                  </div>
+                  <div class="flex items-center reveal">
+                        <span class="text-3xl mr-4">3️⃣</span>
+                        <p>Recorte seguindo as orientações.</p>
+                  </div>
+                  <div class="flex items-center reveal">
+                        <span class="text-3xl mr-4">4️⃣</span>
+                        <p>Divirta-se jogando enquanto aprende!</p>
+                  </div>
+            </div>
+      </section>
+
+      <!-- Testimonials Section (Plain) -->
+      <section id="testimonials" class="py-20 px-4 bg-blue-50">
+            <h2 class="text-3xl font-semibold text-center mb-12 reveal">Quem já jogou, recomenda!</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                  <blockquote class="bg-white p-6 rounded-2xl shadow-lg reveal">
+                        <p class="text-blue-900">"Usei o jogo para revisar conteúdos para o ENEM e adorei. Muito prático!"</p>
+                        <footer class="mt-4 text-right font-semibold text-blue-700">— Lucas, estudante</footer>
+                  </blockquote>
+                  <blockquote class="bg-white p-6 rounded-2xl shadow-lg reveal">
+                        <p class="text-blue-900">"Aplicamos nas aulas de Sociologia e os alunos aprenderam brincando!"</p>
+                        <footer class="mt-4 text-right font-semibold text-blue-700">— Professora Ana Paula</footer>
+                  </blockquote>
+            </div>
+      </section>
+
+      <!-- Included Section (Gradient) -->
+      <section id="included" class="py-20 px-4 bg-gradient-to-br from-blue-700 to-blue-500 text-white">
+            <h2 class="text-3xl font-semibold text-center mb-12 reveal">O que está incluído?</h2>
+            <ul class="max-w-3xl mx-auto space-y-4 reveal">
+                  <li>📄 1 Jogo da Memória - Sociologia (40 pares)</li>
+                  <li>📄 1 Jogo da Memória - História (40 pares)</li>
+                  <li>🎨 Versão Colorida e P&B para economia de tinta</li>
+                  <li>✂️ Instruções de montagem</li>
+            </ul>
+      </section>
+
+      <!-- Guarantee Section (Plain) -->
+      <section id="guarantee" class="py-20 px-4 bg-blue-50 text-center">
+            <h2 class="text-3xl font-semibold mb-4 reveal text-blue-900">Compra Segura!</h2>
+            <p class="mb-6 reveal text-blue-900">Download instantâneo e garantia de qualidade. Se não ficar satisfeito, solicite reembolso em até 7 dias!</p>
+            <div class="flex justify-center space-x-6 reveal">
+                  <img src="badge-secure.png" alt="Compra Segura" class="h-12" />
+                  <img src="badge-guarantee.png" alt="Garantia de 7 Dias" class="h-12" />
+                  <img src="badge-payment.png" alt="Pagamento Protegido" class="h-12" />
+            </div>
+      </section>
+
+      <!-- CTA Section (Gradient) -->
+      <section id="cta" class="py-20 px-4 bg-gradient-to-br from-blue-700 to-blue-500 text-white text-center">
+            <h2 class="text-3xl font-semibold mb-6 reveal">Transforme seu Estudo em Diversão!</h2>
+            <a href="download/jogo-memoria.pdf" class="bg-white text-blue-700 px-8 py-4 rounded-full text-xl hover:bg-gray-100 transition-transform transform hover:scale-105 reveal">🔵 Baixar Agora</a>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-8 text-center text-sm text-blue-700 bg-white">
+            © 2025 Jogo da Memória Educativo. Todos os direitos reservados.
+      </footer>
+
+      <!-- Scroll Reveal Script -->
+      <script>
+            const reveals = document.querySelectorAll('.reveal');
+            function onScroll() {
+                  for (let el of reveals) {
+                        const top = el.getBoundingClientRect().top;
+                        const windowHeight = window.innerHeight;
+                        if (top < windowHeight - 50) el.classList.add('active');
+                  }
+            }
+            window.addEventListener('scroll', onScroll);
+            window.addEventListener('load', onScroll);
+      </script>
+
+</body>
+
+</html>
